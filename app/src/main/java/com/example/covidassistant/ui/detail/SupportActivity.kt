@@ -22,6 +22,7 @@ class SupportActivity : AppCompatActivity() {
         setContentView(R.layout.activity_support)
         supportActionBar?.title = intent.getStringExtra("Support")
         supportActionBar?.setDisplayHomeAsUpEnabled(true);
+        supportActionBar?.setDisplayShowHomeEnabled(true)
         checkPermission()
         medical_number.setOnClickListener { callPhone("104") }
         emergency_number.setOnClickListener { callPhone("112") }

@@ -19,6 +19,7 @@ class DetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detail)
         supportActionBar?.title = intent.getStringExtra("title")
         supportActionBar?.setHomeButtonEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
         webview.webViewClient = WebClient()
         val url = intent.getStringExtra("url")
         webview.settings.loadsImagesAutomatically = true
